@@ -25,6 +25,7 @@
  * 100           [10,10,10,10,10,10,10,10,10,10]     110
  *
  *
+ *  Created by Hyunmi on 1/27/20.
  *  Copyright © 2020 Hyunmi. All rights reserved.
  */
 
