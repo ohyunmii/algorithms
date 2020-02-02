@@ -57,7 +57,7 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 
 int main(int argc, const char * argv[]) {
     
-       vector<int> progresses{93,30,55} ;
+    vector<int> progresses{93,30,55} ;
     vector<int> speeds{1,30,5};
     vector<int> result = solution(progresses, speeds);
     
