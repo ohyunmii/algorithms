@@ -23,13 +23,16 @@
 */
 
 
-
 #include <iostream>
+#include <chrono>
+#include <ctime>
 #include <string>
 #include <vector>
 #include <queue>
 
+
 using namespace std;
+using namespace chrono;
 
 int solution(vector<int> priorities, int location) {
     int answer = 0;
@@ -62,6 +65,7 @@ int solution(vector<int> priorities, int location) {
 
 int main(int argc, const char * argv[]) {
     
+    
     int testcase_num = 2;
     vector<vector<int>> priorities;
     priorities.push_back(vector<int> {2,1,3,2});
@@ -69,9 +73,17 @@ int main(int argc, const char * argv[]) {
     vector<int> location {2,0};
     
     while(testcase_num--){
+        auto start = system_clock::now();
         int cur_pos = abs(testcase_num - 1);
         cout << solution(priorities[cur_pos], location[cur_pos]) <<endl;
+        auto end = system_clock::now();
+        time_t end_time = system_clock::to_time_t(end);
+        
+        duration<double> elapsed_time = end-start;
+        cout << "Finished computation at " << ctime(&end_time);
+        cout << "Elapsed time: " << elapsed_time.count() << " seconds.\n" << endl;
     }
     
     return 0;
 }
+
