@@ -11,7 +11,7 @@
 *   [6, 10, 2]          "6210"
 *   [3, 30, 34, 5, 9]   "9534330"     
 *
-* Created by Hyunmi on 2/02/20.
+* Created by Hyunmi on 02/06/20.
 * Copyright © 2020 Hyunmi. All rights reserved.
 */
 
